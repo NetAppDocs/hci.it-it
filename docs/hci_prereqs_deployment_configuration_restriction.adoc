@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: docs/hci_prereqs_deployment_configuration_restriction.html 
+summary: Scopri le limitazioni della configurazione di implementazione. 
+keywords: netapp, hci, deployment, restriction, configuration, nde, compute, node, storage 
+---
+= Limitazioni della configurazione di implementazione
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+:keywords: netapp, hci, element, Witness Node
+
+
+[role="lead"]
+Alcune configurazioni sono limitate nel NetApp Deployment Engine a seconda della versione di VMware vSphere, del tipo di nodo di calcolo e del numero di nodi di storage. Le configurazioni limitate si applicano a VMware vSphere 7.0 con nodi di calcolo H610C o H615C e due o tre nodi di storage. Se si desidera procedere con una configurazione limitata, è necessario selezionare una versione di vSphere diversa, ad esempio vSphere 6.7, oppure impedire l'implementazione di nodi di controllo disponendo di almeno quattro nodi di storage nella configurazione.
+
+Se link:task_nde_select_inventory.html["Selezionare una configurazione limitata dalla pagina *inventario*"] durante l'implementazione, viene visualizzato un messaggio di errore con opzioni di configurazione valide alternative.
+
+[discrete]
+== Trova ulteriori informazioni
+
+* https://www.netapp.com/hybrid-cloud/hci-documentation/["Pagina delle risorse NetApp HCI"^]
+* https://docs.netapp.com/us-en/vcp/index.html["Plug-in NetApp Element per server vCenter"^]
+

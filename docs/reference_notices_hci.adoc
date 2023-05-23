@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: docs/reference_notices_hci.html 
+keywords: copyrights, notice, trademarks, patents, privacy, open source 
+summary: 'Le note legali forniscono l"accesso a dichiarazioni di copyright, marchi, brevetti e altro ancora.' 
+translate: false 
+---
+= Note legali
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le note legali forniscono l'accesso a dichiarazioni di copyright, marchi, brevetti e altro ancora.
+
+
+
+== Copyright
+
+http://www.netapp.com/us/legal/copyright.aspx[]
+
+
+
+== Marchi
+
+NETAPP, il logo NETAPP e i marchi elencati nella pagina dei marchi NetApp sono marchi di NetApp, Inc. Altri nomi di società e prodotti potrebbero essere marchi dei rispettivi proprietari.
+
+http://www.netapp.com/us/legal/netapptmlist.aspx[]
+
+
+
+== Brevetti
+
+Un elenco aggiornato dei brevetti di proprietà di NetApp è disponibile all'indirizzo:
+
+https://www.netapp.com/us/media/patents-page.pdf[]
+
+
+
+== Direttiva sulla privacy
+
+https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
+
+
+
+== Open source
+
+I file di avviso forniscono informazioni sul copyright e sulle licenze di terze parti utilizzate nel software NetApp.
+
+* link:../media/NetApp_HCI_1.11_notice.pdf["Avviso per NetApp HCI 1.11"^]
+* link:../media/Element_Software_12.7.pdf["Avviso per il software Element 12.7"^]
+* link:../media/Ember_OS_12.7.pdf["Avviso per Ember OS 12.7"^]
+* link:../media/mNode_12.7.pdf["Avviso per il nodo di gestione 12.7"^]
+* link:../media/NetApp_HCI_1.10_notice.pdf["Avviso per NetApp HCI 1.10"^]
+* link:../media/Element_Software_12.5.pdf["Avviso per il software Element 12.5"^]
+* link:../media/SolidFire_eSDS_12.5.pdf["Avviso per NetApp SolidFire Enterprise SDS 12.5"^]
+* link:../media/mNode_12.5.pdf["Avviso per il nodo di gestione 12.5"^]
+* link:../media/ansible-products-notice.pdf["Avviso per Ansible role for Compute Upgrades"^]
+* link:../media/compute_firmware_bundle_2.174.0_notices.pdf["Avviso per Compute firmware Bundle 2.174.0"^]
+* link:../media/storage_firmware_bundle_2.164.0_notices.pdf["Avviso per Storage firmware Bundle 2.164"^]
+* link:../media/storage_firmware_bundle_2.150_notices.pdf["Avviso per Storage firmware Bundle 2.150"^]
+* link:../media/compute_firmware_bundle_2.154.4_notices.pdf["Avviso per Compute firmware Bundle 2.154.4"^]
+* link:../media/storage_firmware_bundle_2.146_notices.pdf["Avviso per Storage firmware Bundle 2.146"^]
+* link:../media/compute_firmware_bundle_2.146_notices.pdf["Avviso per Compute firmware Bundle 2.146"^]
+* link:../media/storage_firmware_bundle_2.99_notices.pdf["Avviso per Storage firmware Bundle 2.99.2"^]
+* link:../media/compute_firmware_bundle_2.76_notices.pdf["Avviso per Compute firmware Bundle 2.76"^]
+* link:../media/storage_firmware_bundle_2.76_notices.pdf["Avviso per Storage firmware Bundle 2.76"^]
+* link:../media/compute_firmware_bundle_2.27_notices.pdf["Avviso per Compute firmware Bundle 2.27"^]
+* link:../media/storage_firmware_bundle_2.27_notices.pdf["Avviso per Storage firmware Bundle 2.27"^]
+* link:../media/compute_iso_notice.pdf["Avviso per l'ISO del firmware di calcolo"^]
+* link:../media/H610S_BMC_notice.pdf["Avviso per H610S BMC"^]
+* link:../media/mgmt_svcs_2.23_notice.pdf["Avviso per i servizi di gestione 2.23.64 (plug-in NetApp Element per VMware vCenter Server 5.1.12)"^]
+* link:../media/mgmt_svcs_2.22_notice.pdf["Avviso per i servizi di gestione 2.22.7 (plug-in NetApp Element per VMware vCenter Server 5.0.37)"^]
+* link:../media/mgmt_svcs_2.21_notice.pdf["Avviso per i servizi di gestione 2.21.61 (plug-in NetApp Element per VMware vCenter Server 4.10.12)"^]
+* link:../media/2.20_notice.pdf["Avviso per i servizi di gestione 2.20.69 (plug-in NetApp Element per vCenter Server 4.9.14)"^]
+* link:../media/2.19_notice.pdf["Avviso per i servizi di gestione 2.19.48 (plug-in NetApp Element per vCenter Server 4.8.34)"^]
+* link:../media/2.18_notice.pdf["Avviso per i servizi di gestione 2.18.91 (plug-in NetApp Element per vCenter Server 4.7.10)"^]
+

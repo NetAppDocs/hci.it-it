@@ -93,7 +93,8 @@ NOTE: Ti verrà richiesto di effettuare l'accesso utilizzando le credenziali del
 
 == Firmware dello storage
 
-* link:rn_storage_firmware_2.164.0.html["Note sulla versione di Storage firmware Bundle 2.164.0"] _NUOVO_
+* link:rn_storage_firmware_2.175.0.html["Note sulla versione di Storage firmware Bundle 2.175.0"] _NUOVO_
+* link:rn_storage_firmware_2.164.0.html["Note sulla versione di Storage firmware Bundle 2.164.0"]
 * link:rn_storage_firmware_2.150.html["Note sulla versione di Storage firmware Bundle 2.150"]
 * link:rn_storage_firmware_2.146.html["Note sulla versione di Storage firmware Bundle 2.146"]
 * link:rn_storage_firmware_2.99.2.html["Note sulla versione di Storage firmware Bundle 2.99.2"]

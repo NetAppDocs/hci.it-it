@@ -3,9 +3,7 @@
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
   <block id="6563446976572a0b32d68f15a2be569f" category="paragraph">Versioni del firmware e dei driver ESXi supportate per NetApp HCI e versioni del firmware per i nodi di storage NetApp HCI.</block>
   <block id="136c07ee64e1881b929de11861c01b0f" category="inline-link-macro">Nodi di storage</block>
-  <block id="bf44a0123ec45362af49b3862557cdd8" category="paragraph"><block ref="f4e8c07388940da9080e74e50960909d" category="inline-link-macro-rx"></block>* H610S * H410S</block>
   <block id="0a90ae9733f3b799ab6f5203099a1799" category="inline-link-macro">Nodi di calcolo</block>
-  <block id="a82f3d9d22bfe1382d03945f3377eb65" category="paragraph"><block ref="4fe99558e9030b1914f3007a88f2f74d" category="inline-link-macro-rx"></block>* H615C * H610C * H410C * H300E/H500E/H700E</block>
   <block id="4d7f1494220a09041ad2c49a543b342b" category="doc">H610S</block>
   <block id="0b50a6dd18dd8aee8ba17d59674440d3" category="paragraph">Le versioni del firmware supportate per i nodi di storage della serie H e SolidFire.</block>
   <block id="731bda6a47b8bc518872e3e2f80a951e" category="list-text"><block ref="21514728c12cdc7dccbeee8c8c1d01f4" category="inline-xref-macro-rx"></block></block>
@@ -1574,7 +1572,6 @@
   <block id="870bd874847cca4294c93fdb50347662" category="section-title">NetApp HCI 1.6P1 e versioni successive</block>
   <block id="80fe8777d7b15097b7f93768f900d2f0" category="paragraph">È possibile utilizzare NetApp Hybrid Cloud Control solo se l'installazione di NetApp HCI viene eseguita sulla versione 1.6P1 o successiva.</block>
   <block id="2671f57229d8ee038d01d4336694d7e0" category="list-text">Nel riquadro di espansione dell'installazione, selezionare *Espandi*.</block>
-  <block id="053ab309f18a77ef5149424304d1c86d" category="list-text">Accedere al motore di implementazione NetApp fornendo le credenziali di amministratore del cluster di storage NetApp HCI.</block>
   <block id="1704d55dca4dda129b0c084d7b0dac9f" category="list-text">Nella pagina di benvenuto, selezionare *No*.</block>
   <block id="136dc09835924029e4299fa28f17233d" category="list-text">Selezionare *continua*.</block>
   <block id="c1a72b8e6d0e23818ec5b93d9bebfb17" category="list-text">Nella pagina inventario disponibile, selezionare il nodo di storage che si desidera aggiungere all'installazione di NetApp HCI esistente.</block>
@@ -6179,4 +6176,8 @@
   <block id="022beb4c9e2bdbe9e3398445a4fad6b2" category="cell">06/15/2023</block>
   <block id="804066a6a5042090a2a0b25c55f38e72" category="cell">3.5</block>
   <block id="489901e715cade6fe0efc7e21e194576" category="cell">2.17</block>
+  <block id="d44403a904c0446f29d8bc5c2ed4770e" category="list-text">Accedere al motore di implementazione NetApp fornendo le credenziali di amministratore del cluster di storage NetApp HCI locale.</block>
+  <block id="60099f97c4a82ba2ee2d4a4d593b844b" category="admonition">Non è possibile accedere utilizzando le credenziali Lightweight Directory Access Protocol.</block>
+  <block id="f4e8c07388940da9080e74e50960909d" category="paragraph"><block ref="f4e8c07388940da9080e74e50960909d" category="inline-link-macro-rx"></block></block>
+  <block id="4fe99558e9030b1914f3007a88f2f74d" category="paragraph"><block ref="4fe99558e9030b1914f3007a88f2f74d" category="inline-link-macro-rx"></block></block>
 </blocks>

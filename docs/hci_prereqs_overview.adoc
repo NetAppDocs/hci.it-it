@@ -30,6 +30,7 @@ Di seguito sono riportati i collegamenti ai requisiti e alle attività di pre-im
 * link:hci_prereqs_environmental.html["Requisiti ambientali"]
 * link:hci_prereqs_protection_domains.html["Domini di protezione"]
 * link:hci_prereqs_witness_nodes.html["Requisiti di risorse di Witness Node per cluster di storage a due nodi"]
+* link:hci_prereqs_deployment_configuration_restriction.html["Limitazioni della configurazione di implementazione"]
 
 
 [discrete]

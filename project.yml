@@ -325,7 +325,7 @@ sidebar:
     - title: Rimuovere i nodi di controllo dopo l'espansione del cluster
       url: "/docs/task_hci_removewn.html"
   - title: USA Rancher su NetApp HCI
-    url: "/docs/concept_rancher_concept.html"
+    url: "/docs/concept_rancher_product_overview.html"
   - title: Manutenzione dell'hardware della serie H.
     entries:
     - title: Panoramica sulla manutenzione dell'hardware della serie H.

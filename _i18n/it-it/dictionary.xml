@@ -4525,20 +4525,7 @@
   <block id="aaeb8011e825f6e35c3a11da3b06ae8e" category="list-text">Selezionare *Factory Default*, quindi selezionare il pulsante di opzione *Remove current settings and set the user defaults to ADMIN/ADMIN* (Rimuovi impostazioni correnti e imposta le impostazioni utente predefinite su ADMIN/ADMIN*):</block>
   <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">Selezionare *Restore* (Ripristina).</block>
   <block id="51cb13d5d7f53d14e1177bc7209fd917" category="list-text">Disconnettersi e quindi effettuare nuovamente l'accesso per confermare che le credenziali sono state modificate.</block>
-  <block id="4365aa4d62fcaed8a61f5851f7c63acc" category="section-title">Aggiornare il firmware BMC sul nodo</block>
-  <block id="e64e1f5e233bff07158f07da3f6f71dc" category="inline-link-macro">Sito di supporto NetApp (accesso richiesto)</block>
-  <block id="4cd4d7d72d12ae588ded720ce09eb6be" category="paragraph">Dopo aver sostituito il nodo di calcolo, potrebbe essere necessario aggiornare la versione del firmware. È possibile scaricare il file del firmware più recente dal menu a discesa di <block ref="abee0fa17807b632b354ed0eee4c1a88" category="inline-link-macro-rx"></block>.</block>
   <block id="86e446cf24d6610677a2c50b9cdc9236" category="list-text">Accedere all'interfaccia utente del BMC (Baseboard Management Controller).</block>
-  <block id="2a0625a35fb4af01157e81573ba8eeda" category="list-text">Selezionare *manutenzione &gt; aggiornamento firmware*.</block>
-  <block id="447bf1c51f518d302e2efefb20e4f3e5" category="image-alt">Mostra la navigazione nell'interfaccia utente BMC per gli aggiornamenti del firmware.</block>
-  <block id="5d3ccc6c1013f8038b1f86a92db0c184" category="list-text">Dalla console BMC, selezionare *manutenzione*.</block>
-  <block id="051af6c885ceb71e22b881985fe7c46c" category="image-alt">Mostra la schermata di manutenzione nell'interfaccia utente BMC.</block>
-  <block id="5f60cd8039f9c554b92de593bbb6a0a2" category="list-text">Dalla scheda Maintenance (manutenzione), selezionare *firmware Update* (aggiornamento firmware) dalla barra di navigazione a sinistra dell'interfaccia utente e selezionare *Enter Update Mode* (Immetti modalità di aggiornamento).</block>
-  <block id="67c015407a3660cd7c1736c3cbf43dd0" category="image-alt">Mostra la schermata di aggiornamento del firmware nell'interfaccia utente BMC.</block>
-  <block id="0356ec6b4d587e5f4d2782c817a2e96b" category="list-text">Selezionare *Sì* nella finestra di dialogo di conferma.</block>
-  <block id="7874642886c22920789477d73255c589" category="list-text">Selezionare *Sfoglia* per selezionare l'immagine del firmware da caricare, quindi selezionare *carica firmware*. Il caricamento del firmware da una posizione esterna alla diretta vicinanza del nodo potrebbe causare tempi di caricamento prolungati e possibili timeout.</block>
-  <block id="9ca6aab24c6382de412d4fb67990fbb9" category="list-text">Consentire i controlli di preservazione della configurazione e selezionare *Avvia aggiornamento*. L'aggiornamento richiede circa 5 minuti. Se il tempo di caricamento supera i 60 minuti, annullare il caricamento e trasferire il file su una macchina locale nelle vicinanze del nodo. In caso di timeout della sessione, è possibile che vengano visualizzati diversi avvisi durante il tentativo di accesso all'area di aggiornamento del firmware dell'interfaccia utente BMC. Se si annulla l'aggiornamento, si viene reindirizzati alla pagina di accesso.</block>
-  <block id="fe29f01ceefdfc2a26d419451331a7de" category="list-text">Al termine dell'aggiornamento, selezionare *OK* e attendere il riavvio del nodo. Effettuare l'accesso dopo l'aggiornamento e selezionare *sistema* per verificare che la versione di *Revisione firmware* corrisponda alla versione caricata.</block>
   <block id="a9c05b4ccc90c8637b70c363ad271480" category="summary">Informazioni sull'opzione di configurazione di rete NetApp HCI B.</block>
   <block id="0611fb52106ee8f7804bfcd78f7838db" category="paragraph">NetApp HCI può utilizzare diversi cablaggi di rete e configurazioni VLAN. La prima configurazione, opzione B, utilizza sei cavi di rete per ciascun nodo di calcolo.</block>
   <block id="42495054b66e3c4f16a888eec964008d" category="section-title">Opzione di configurazione B: Sei cavi per nodi di calcolo</block>
@@ -6042,33 +6029,6 @@
   <block id="9a273d2d550df11ef961cf667f623547" category="sidebar">Espandere le risorse di calcolo e storage NetApp</block>
   <block id="efaccef33aabd635656b681f92a298ea" category="sidebar">Manutenzione dell'hardware della serie H.</block>
   <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">Versioni precedenti</block>
-  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Inizia subito</block>
-  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Note di rilascio</block>
-  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novità</block>
-  <block id="01064f33f360eefba819bf9542c0486b" category="sidebar">Installazione e manutenzione dell'hardware</block>
-  <block id="147fc8b7d94adc0dceb5978ab928f776" category="sidebar">Installazione dell'hardware della serie H.</block>
-  <block id="09af8dd99d422c917dcb27847056b045" category="sidebar">Manutenzione dell'hardware della serie H.</block>
-  <block id="bc2592cdeeae26af69f28b4f6a1c8ca0" category="sidebar">Installare NetApp HCI</block>
-  <block id="96e1a5a82d70a24f161f0adb6e19ac8d" category="sidebar">Panoramica dell'installazione e dell'implementazione</block>
-  <block id="8a6e336622cf399a6453e4659f2a6147" category="sidebar">Inizia la tua implementazione con NetApp Deployment Engine</block>
-  <block id="a54d0ac20b8277a267fb90e8c0b05032" category="sidebar">Eseguire attività post-implementazione</block>
-  <block id="cfe80b2a0cabf734adc7b7c1613cfe4f" category="sidebar">USA NetApp HCI</block>
-  <block id="930dca22f6f735a61fd8f484808fecb3" category="sidebar">Gestione con NetApp Hybrid Cloud Control</block>
-  <block id="6cb5dfacb4ee1684b5483221bfcf580c" category="sidebar">Utilizzare il plug-in NetApp Element per vCenter Server</block>
-  <block id="d02b5df8c0bf5a555ea650be898817f7" category="sidebar">Espandere NetApp HCI</block>
-  <block id="748ace58318ab9d82392d680b07e89e6" category="sidebar">Aggiornare NetApp HCI</block>
-  <block id="f7731734f4507319f744fe2c8158536a" category="sidebar">Risolvere i problemi relativi a NetApp HCI e Rancher</block>
-  <block id="eeabaf7c41bcd50a6a02694c070dbfb4" category="sidebar">Reimpostare BMC sui nodi di calcolo</block>
-  <block id="166868e0f588717c1c62116a03c9b979" category="sidebar">Altri articoli della Knowledge base</block>
-  <block id="2a9dbfa4b74c53d7304fc8b79a1874d3" category="sidebar">Soluzioni</block>
-  <block id="fcf140abed196b8eba71c45f21312bce" category="sidebar">Soluzioni NetApp</block>
-  <block id="81a123ccab93cd947289b672b0e50348" category="sidebar">Demo e tutorial</block>
-  <block id="45a52e6c046bce2a0f9f5253cc23fbd6" category="sidebar">Videoteca NetApp HCI</block>
-  <block id="9135ac6f13de11d3b4b9f2f98ff9bcb8" category="sidebar">NetApp Learning Services</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blog e community</block>
-  <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">Community di NetApp</block>
-  <block id="213686afc3803be7caa09348765467fe" category="sidebar">Dove ottenere aiuto</block>
-  <block id="389672366ff11f72a82c5c495b9b5159" category="sidebar">Documentazione di NetApp HCI 1.8</block>
   <block id="a35c2c2e602b46918d896beca9bdff98" category="doc">Note sulla versione di Storage firmware Bundle 2.175.0</block>
   <block id="1b7df2ed7eecb435d51d1cf325f461e2" category="paragraph">La versione 2.175.0 del bundle firmware di storage contiene correzioni generali.</block>
   <block id="0a60c14a30cc8f85370185da12d36fa3" category="paragraph">Questo pacchetto firmware contiene le seguenti versioni firmware (evidenziate in *grassetto*) per i componenti hardware:</block>
@@ -6190,4 +6150,9 @@
   <block id="4b07d1c342b03364f7120990720b53ef" category="section-title">Fase 5: Implementare nuovamente i nodi di controllo per cluster storage a due e tre nodi</block>
   <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">Impossibile avviare gli aggiornamenti di SolidFire e HCI a causa di un errore di caricamento del pacchetto di aggiornamento</block>
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">A partire dal 2023 novembre, non puoi avviare un aggiornamento dei componenti utilizzando il controllo cloud ibrido di NetApp o l'API REST perché i certificati delle chiavi di firma (privati e pubblici) sono scaduti il 5 novembre 2023. Per risolvere questo problema, seguire la soluzione alternativa descritta nell'articolo della Knowledge base<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>.</block>
+  <block id="8daa3151587347980e74b151202ea3b6" category="list-text">Configurare il BMC, vedere <block ref="785a710f4c6946c37cc4ffd8e78657df" category="inline-link-macro-rx"></block> per ulteriori informazioni.</block>
+  <block id="a0701e6fb9d20d52e56b635ed36b87f5" category="inline-link">Come disattivare l'accesso all'interfaccia utente Web BMC sui sistemi HCI e SolidFire H-Series</block>
+  <block id="6eacafa95777fb1e6eb8520265b58990" category="list-text">Consultare l'articolo della Knowledge base di NetApp<block ref="241ab5b011155d72deeb18c5d431446f" category="inline-link-rx"></block> Per determinare se l'accesso Web a BMC deve essere disattivato.</block>
+  <block id="65c8d097794b4f73719e82bebe86d855" category="section-title">Aggiornare il firmware sul nodo</block>
+  <block id="08a91b27b8b81bd9d0b64ba51e61dd98" category="paragraph">Dopo aver sostituito il nodo di calcolo, potrebbe essere necessario aggiornare la versione del firmware. Vedere <block ref="502434424b58174296cfde9ecff2397f" category="inline-link-macro-rx"></block> per ulteriori informazioni.</block>
 </blocks>

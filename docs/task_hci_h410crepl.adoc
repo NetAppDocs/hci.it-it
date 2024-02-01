@@ -58,7 +58,7 @@ Di seguito sono riportate alcune attività aggiuntive che potrebbero essere nece
 
 * link:task_hci_removewn.html["Rimuovere i nodi di controllo per liberare le risorse di calcolo"]
 * <<Modificare la password se si riceve un nodo sostitutivo con una password BMC non standard>>
-* <<Aggiornare il firmware BMC sul nodo>>
+* <<Upgrade the BMC firmware on your node>>
 
 
 
@@ -146,6 +146,8 @@ CAUTION: Se le prese d'aria sul retro del telaio sono bloccate da cavi o etichet
 
 TIP: Assicurarsi che il nodo sostitutivo sia cablato nello stesso modo degli altri nodi nello chassis.
 
+. Configurare il BMC, vedere link:hci_prereqs_final_prep.html["Configurare IPMI per ciascun nodo"] per ulteriori informazioni.
+. Consultare l'articolo della Knowledge base di NetApp https://kb.netapp.com/onprem/solidfire/Element_OS/How_to_disable_BMC_web_UI_access_on_HCI_and_SolidFire_H-Series_systems["Come disattivare l'accesso all'interfaccia utente Web BMC sui sistemi HCI e SolidFire H-Series"^] Per determinare se l'accesso Web a BMC deve essere disattivato.
 
 
 
@@ -925,29 +927,9 @@ image::bmc pw sticker.png[Mostra il retro del nodo con l'adesivo sotto la porta 
 
 
 
-== Aggiornare il firmware BMC sul nodo
+== Aggiornare il firmware sul nodo
 
-Dopo aver sostituito il nodo di calcolo, potrebbe essere necessario aggiornare la versione del firmware. È possibile scaricare il file del firmware più recente dal menu a discesa di link:https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab["Sito di supporto NetApp (accesso richiesto)"^].
-
-.Fasi
-. Accedere all'interfaccia utente del BMC (Baseboard Management Controller).
-. Selezionare *manutenzione > aggiornamento firmware*.
-+
-image::h410c-bmc1.png[Mostra la navigazione nell'interfaccia utente BMC per gli aggiornamenti del firmware.]
-
-. Dalla console BMC, selezionare *manutenzione*.
-+
-image::h410c-bmc2.png[Mostra la schermata di manutenzione nell'interfaccia utente BMC.]
-
-. Dalla scheda Maintenance (manutenzione), selezionare *firmware Update* (aggiornamento firmware) dalla barra di navigazione a sinistra dell'interfaccia utente e selezionare *Enter Update Mode* (Immetti modalità di aggiornamento).
-+
-image::h410c-bmc3.png[Mostra la schermata di aggiornamento del firmware nell'interfaccia utente BMC.]
-
-. Selezionare *Sì* nella finestra di dialogo di conferma.
-. Selezionare *Sfoglia* per selezionare l'immagine del firmware da caricare, quindi selezionare *carica firmware*. Il caricamento del firmware da una posizione esterna alla diretta vicinanza del nodo potrebbe causare tempi di caricamento prolungati e possibili timeout.
-. Consentire i controlli di preservazione della configurazione e selezionare *Avvia aggiornamento*. L'aggiornamento richiede circa 5 minuti. Se il tempo di caricamento supera i 60 minuti, annullare il caricamento e trasferire il file su una macchina locale nelle vicinanze del nodo. In caso di timeout della sessione, è possibile che vengano visualizzati diversi avvisi durante il tentativo di accesso all'area di aggiornamento del firmware dell'interfaccia utente BMC. Se si annulla l'aggiornamento, si viene reindirizzati alla pagina di accesso.
-. Al termine dell'aggiornamento, selezionare *OK* e attendere il riavvio del nodo. Effettuare l'accesso dopo l'aggiornamento e selezionare *sistema* per verificare che la versione di *Revisione firmware* corrisponda alla versione caricata.
-
+Dopo aver sostituito il nodo di calcolo, potrebbe essere necessario aggiornare la versione del firmware. Vedere link:task_hcc_upgrade_compute_node_firmware.html["Aggiornare il firmware del nodo di calcolo"] per ulteriori informazioni.
 
 
 

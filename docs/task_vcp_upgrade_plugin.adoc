@@ -27,7 +27,7 @@ NOTE: Management Services 2.22.7 include Element Plug-in per vCenter Server 5.0 
 --
 Questa procedura di aggiornamento riguarda i seguenti scenari di aggiornamento:
 
-* Stai effettuando l'aggiornamento a Element Plug-in per vCenter Server 5,2, 5,1 o 5,0.
+* Stai effettuando l'aggiornamento a Element Plug-in per vCenter Server 5,3, 5,2, 5,1 o 5,0.
 * Si sta eseguendo l'aggiornamento a 8.0 o 7.0 HTML5 vSphere Web Client.
 +
 
@@ -69,10 +69,19 @@ IMPORTANT: Il plug-in non è compatibile con la versione 6.7 U2 build 13007421 d
 * *Aggiornamenti dei servizi di gestione*: È stato aggiornato il https://mysupport.netapp.com/site/products/all/details/mgmtservices/downloads-tab["bundle di servizi di gestione"^] alla versione più recente. Gli aggiornamenti del plug-in vCenter vengono distribuiti utilizzando gli aggiornamenti dei servizi di gestione rilasciati al di fuori delle principali release di prodotti per NetApp HCI.
 * *Aggiornamenti del nodo di gestione*:
 +
-** A partire dal plug-in Element vCenter 5.0, viene eseguito un nodo di gestione link:task_hcc_upgrade_management_node.html["aggiornato"] alla versione 12.3.x o successiva.
-** Per il plug-in Element vCenter da 4.4 a 4.10, si sta eseguendo un nodo di gestione che lo è stato link:task_hcc_upgrade_management_node.html["aggiornato"] alla versione 11.3 o successiva. VCenter Plug-in 4.4 o versione successiva richiede un nodo di gestione 11.3 o versione successiva con un'architettura modulare che fornisce singoli servizi. Il nodo di gestione deve essere acceso con il relativo indirizzo IP o DHCP configurato.
+[role="tabbed-block"]
+====
+.Plug-in Element per vCenter 5.0 e versioni successive
+--
+Si sta eseguendo un nodo di gestione che è stato link:task_hcc_upgrade_management_node.html["aggiornato"] alla versione 12.3.x o successiva.
 
+--
+.Plug-in Element per vCenter 4.10 e versioni precedenti
+--
+Si sta eseguendo un nodo di gestione che è stato link:task_hcc_upgrade_management_node.html["aggiornato"] alla versione 11.3 o successiva. VCenter Plug-in 4.4 o versione successiva richiede un nodo di gestione 11.3 o versione successiva con un'architettura modulare che fornisce singoli servizi. Il nodo di gestione deve essere acceso con il relativo indirizzo IP o DHCP configurato.
 
+--
+====
 * *Upgrade dello storage Element*:
 +
 ** A partire dal plug-in Element vCenter 5.0, si dispone di un cluster che esegue il software NetApp Element 12.3.x o versione successiva.
@@ -90,16 +99,23 @@ image::vcp_registration_utility_ui_qossioc.png[Mostra l'interfaccia utente dell'
 
 . Selezionare *vCenter Plug-in Registration*.
 +
-** La pagina di registrazione del plug-in vCenter per il plug-in Element per vCenter Server 5.x:
-+
+[role="tabbed-block"]
+====
+.Plug-in Element per vCenter 5.0 e versioni successive
+--
+Viene visualizzata la pagina di registrazione dei plug-in vCenter:
+
 image::vcp_remote_plugin_registration_ui.png[Mostra l'interfaccia utente dell'utility di registrazione per un plug-in remoto]
 
-** La pagina di registrazione del plug-in vCenter per il plug-in Element per vCenter Server 4.x:
-+
+--
+.Plug-in Element per vCenter 4.10 e versioni precedenti
+--
+Viene visualizzata la pagina di registrazione dei plug-in vCenter:
+
 image::vcp_registration_utility_ui.png[Mostra l'interfaccia utente dell'utility di registrazione per un plug-in locale]
 
-
-
+--
+====
 . In *Manage vCenter Plug-in* (Gestisci plug-in vCenter), selezionare *Update Plug-in* (Aggiorna plug-in).
 . Confermare o aggiornare le seguenti informazioni:
 +
@@ -110,20 +126,27 @@ image::vcp_registration_utility_ui.png[Mostra l'interfaccia utente dell'utility 
 NOTE: Il nome utente e la password immessi devono essere assegnati a un utente con privilegi di ruolo vCenter Administrator.
 
 .. La password di vCenter Administrator.
-.. (Per server interni/siti oscuri) a seconda del plug-in Element per la versione di vCenter, un URL personalizzato per il file JSON del plug-in o il plug-in ZIP:
+.. (Per server in-house o siti scuri) a seconda del plug-in Element per la versione vCenter, un URL personalizzato per il file JSON del plug-in o il plug-in ZIP:
 +
-... A partire da Element Plug-in per vCenter Server 5.0, un URL personalizzato per il file JSON del plug-in.
-+
+[role="tabbed-block"]
+====
+.Plug-in Element per vCenter 5.0 e versioni successive
+--
+Un URL personalizzato per il file JSON del plug-in.
+
 
 NOTE: È possibile selezionare *Custom URL* (URL personalizzato) per personalizzare l'URL se si utilizza un server HTTP o HTTPS (sito scuro) o se sono state modificate le impostazioni di rete o il nome del file JSON. Per ulteriori procedure di configurazione se si intende personalizzare un URL, vedere la documentazione di Element Plug-in for vCenter Server sulla modifica delle proprietà di vCenter per un server HTTP interno (sito scuro).
 
-... Per Element Plug-in per vCenter Server 4.10 o versioni precedenti, un URL personalizzato per il plug-in ZIP.
-+
+--
+.Plug-in Element per vCenter 4.10 e versioni precedenti
+--
+Un URL personalizzato per il plug-in ZIP.
+
 
 NOTE: È possibile selezionare *Custom URL* (URL personalizzato) per personalizzare l'URL se si utilizza un server HTTP o HTTPS (sito scuro) o se sono state modificate le impostazioni di rete o il nome del file ZIP. Per ulteriori procedure di configurazione se si intende personalizzare un URL, vedere la documentazione di Element Plug-in for vCenter Server sulla modifica delle proprietà di vCenter per un server HTTP interno (sito scuro).
 
-
-
+--
+====
 
 
 . Selezionare *Aggiorna*.
@@ -138,14 +161,23 @@ NOTE: Questa azione crea un nuovo database e completa l'installazione in vSphere
 . In vSphere Web Client, cercare le seguenti attività completate nel task monitor per assicurarsi che l'installazione sia stata completata: `Download plug-in` e. `Deploy plug-in`.
 . Verificare che i punti di estensione del plug-in siano visualizzati nella scheda *Shortcuts* di vSphere Web Client e nel pannello laterale.
 +
-** A partire dal plug-in Element per vCenter Server 5.0, viene visualizzato il punto di estensione del plug-in remoto NetApp Element:
-+
+[role="tabbed-block"]
+====
+.Plug-in Element per vCenter 5.0 e versioni successive
+--
+Viene visualizzato il punto di estensione del plugin remoto di NetApp Element:
+
 image::vcp_remote_plugin_icons_home_page.png[Descrive il punto di estensione del plug-in dopo un aggiornamento o un'installazione corretti per Element Plug-in 5,10 o versioni successive]
 
-** Per il plug-in Element per vCenter Server 4.10 o versioni precedenti, vengono visualizzati i punti di estensione per la configurazione e la gestione di NetApp Element:
-+
+--
+.Plug-in Element per vCenter 4.10 e versioni precedenti
+--
+Vengono visualizzati i punti di estensione della configurazione e della gestione di NetApp Element:
+
 image::vcp_shortcuts_page_accessing_plugin.png[Descrive i punti di estensione del plug-in dopo un aggiornamento o un'installazione corretti per Element Plug-in 4,10 o versioni precedenti]
 
+--
+====
 +
 [NOTE]
 ====
@@ -154,8 +186,6 @@ Se le icone del plug-in vCenter non sono visibili, vedere link:https://docs.neta
 Dopo aver eseguito l'aggiornamento al plug-in NetApp Element per vCenter Server 4.8 o versioni successive con VMware vCenter Server 6.7U1, se i cluster di storage non sono elencati o viene visualizzato un errore del server nelle sezioni *Clusters* e *QoSSIOC Settings* della configurazione NetApp Element, vedere link:https://docs.netapp.com/us-en/vcp/vcp_reference_troubleshoot_vcp.html#error_vcp48_67u1["Plug-in Element per vCenter Server"^] documentazione sulla risoluzione di questi errori.
 
 ====
-
-
 . Verificare la modifica della versione nella scheda *About* (informazioni su) nel punto di estensione *NetApp Element Configuration* del plug-in.
 +
 Dovrebbero essere visualizzati i seguenti dettagli di versione o dettagli di una versione più recente:
@@ -163,8 +193,8 @@ Dovrebbero essere visualizzati i seguenti dettagli di versione o dettagli di una
 +
 [listing]
 ----
-NetApp Element Plug-in Version: 5.2
-NetApp Element Plug-in Build Number: 12
+NetApp Element Plug-in Version: 5.3
+NetApp Element Plug-in Build Number: 9
 ----
 
 

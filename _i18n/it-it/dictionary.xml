@@ -3391,8 +3391,6 @@
   <block id="73bb2b0d39f901d3bcdddd6b19d7170a" category="list-text">*Aggiornamenti dei servizi di gestione*: È stato aggiornato il<block ref="f6e495ec9a99fcd5692d41358780e884" category="inline-link-rx"></block> alla versione più recente. Gli aggiornamenti del plug-in vCenter vengono distribuiti utilizzando gli aggiornamenti dei servizi di gestione rilasciati al di fuori delle principali release di prodotti per NetApp HCI.</block>
   <block id="aac8ad795776bcaba9b87cb70791d2d1" category="list-text">*Aggiornamenti del nodo di gestione*:</block>
   <block id="4c02ebe342ea429a0d2a2a23be2ddd19" category="inline-link-macro">aggiornato</block>
-  <block id="9163ac7fa12bb2150fecf2f1b174db4d" category="list-text">A partire dal plug-in Element vCenter 5.0, viene eseguito un nodo di gestione <block ref="23cc83378d4b0551eef4ac573737e008" category="inline-link-macro-rx"></block> alla versione 12.3.x o successiva.</block>
-  <block id="5e3078320e7b08b85d42398585874ce3" category="list-text">Per il plug-in Element vCenter da 4.4 a 4.10, si sta eseguendo un nodo di gestione che lo è stato <block ref="23cc83378d4b0551eef4ac573737e008" category="inline-link-macro-rx"></block> alla versione 11.3 o successiva. VCenter Plug-in 4.4 o versione successiva richiede un nodo di gestione 11.3 o versione successiva con un'architettura modulare che fornisce singoli servizi. Il nodo di gestione deve essere acceso con il relativo indirizzo IP o DHCP configurato.</block>
   <block id="924861571eeb51fd5eb1d806da0f0e5e" category="list-text">*Upgrade dello storage Element*:</block>
   <block id="b9ad9c0000e5c2b012be9c9ba83b7cff" category="list-text">A partire dal plug-in Element vCenter 5.0, si dispone di un cluster che esegue il software NetApp Element 12.3.x o versione successiva.</block>
   <block id="02738f63a80a594ad3ab131f3a7298f2" category="list-text">Per il plug-in Element vCenter 4.10 o versione precedente, si dispone di un cluster che esegue il software NetApp Element 11.3 o versione successiva.</block>
@@ -3400,9 +3398,7 @@
   <block id="c13fa68b55894aaf612067aa7455ac53" category="list-text">Inserire l'indirizzo IP del nodo di gestione in un browser, inclusa la porta TCP per la registrazione:<block ref="95eed0d846a235b32511f995c34bae39" prefix=" " category="inline-code"></block>L'interfaccia utente dell'utility di registrazione apre la pagina *Manage QoSSIOC Service Credentials* (Gestisci credenziali servizio QoSSIOC) per il plug-in.</block>
   <block id="26fc450c5cd9b7f28b10cff7659b479d" category="image-alt">Mostra l'interfaccia utente dell'utility di registrazione per il plug-in</block>
   <block id="0bd0c7dc69df55cee394b64eebcd27ab" category="list-text">Selezionare *vCenter Plug-in Registration*.</block>
-  <block id="4edf62fd94cfb84b727afbee52aa8128" category="list-text">La pagina di registrazione del plug-in vCenter per il plug-in Element per vCenter Server 5.x:</block>
   <block id="f1b4824619210c84aa04d2783d1f908e" category="image-alt">Mostra l'interfaccia utente dell'utility di registrazione per un plug-in remoto</block>
-  <block id="b53963914b8930756b5acf2d4aca8094" category="list-text">La pagina di registrazione del plug-in vCenter per il plug-in Element per vCenter Server 4.x:</block>
   <block id="cbe647d2b7e55a533fb2f01689441181" category="image-alt">Mostra l'interfaccia utente dell'utility di registrazione per un plug-in locale</block>
   <block id="5c8b8f78ed09c86ecda3569ee8c3a3f0" category="list-text">In *Manage vCenter Plug-in* (Gestisci plug-in vCenter), selezionare *Update Plug-in* (Aggiorna plug-in).</block>
   <block id="8d8ce4b808495ff41a197ebd82fa0d15" category="list-text">Confermare o aggiornare le seguenti informazioni:</block>
@@ -3410,10 +3406,7 @@
   <block id="d5fcc07cbc4a070c18d26103f54f3f58" category="list-text">Il nome utente vCenter Administrator.</block>
   <block id="b1e24f0b2fb8f66a9c2444bf0e385f97" category="admonition">Il nome utente e la password immessi devono essere assegnati a un utente con privilegi di ruolo vCenter Administrator.</block>
   <block id="c2611280cf76890b83743a67ac6478e2" category="list-text">La password di vCenter Administrator.</block>
-  <block id="b8b146fd1e1ecdf074536a02bfe40871" category="list-text">(Per server interni/siti oscuri) a seconda del plug-in Element per la versione di vCenter, un URL personalizzato per il file JSON del plug-in o il plug-in ZIP:</block>
-  <block id="1e35767408ad5bd29ecc61c301c556ef" category="list-text">A partire da Element Plug-in per vCenter Server 5.0, un URL personalizzato per il file JSON del plug-in.</block>
   <block id="b9d11c83e937a9ece9e8b7051bc68606" category="admonition">È possibile selezionare *Custom URL* (URL personalizzato) per personalizzare l'URL se si utilizza un server HTTP o HTTPS (sito scuro) o se sono state modificate le impostazioni di rete o il nome del file JSON. Per ulteriori procedure di configurazione se si intende personalizzare un URL, vedere la documentazione di Element Plug-in for vCenter Server sulla modifica delle proprietà di vCenter per un server HTTP interno (sito scuro).</block>
-  <block id="ba85baaa049f62983a89ac7da1647abd" category="list-text">Per Element Plug-in per vCenter Server 4.10 o versioni precedenti, un URL personalizzato per il plug-in ZIP.</block>
   <block id="daa4768416116e6634bf75e379507244" category="admonition">È possibile selezionare *Custom URL* (URL personalizzato) per personalizzare l'URL se si utilizza un server HTTP o HTTPS (sito scuro) o se sono state modificate le impostazioni di rete o il nome del file ZIP. Per ulteriori procedure di configurazione se si intende personalizzare un URL, vedere la documentazione di Element Plug-in for vCenter Server sulla modifica delle proprietà di vCenter per un server HTTP interno (sito scuro).</block>
   <block id="35165f9b14f6cde03fa7f6f9b03732ba" category="list-text">Selezionare *Aggiorna*.</block>
   <block id="14b68e07a69ae90b19c2bd823797ff21" category="paragraph">Una volta completata la registrazione, nell'interfaccia utente dell'utility di registrazione viene visualizzato un banner.</block>
@@ -3421,8 +3414,6 @@
   <block id="f523905d48a1db956815565365a5a6ad" category="admonition">Questa azione crea un nuovo database e completa l'installazione in vSphere Web Client.</block>
   <block id="9b572df8237d34b7c32142ac15f1325f" category="list-text">In vSphere Web Client, cercare le seguenti attività completate nel task monitor per assicurarsi che l'installazione sia stata completata:<block ref="ec6215521ab965944e6a3eeb6b9ab6f1" prefix=" " category="inline-code"></block> e.<block ref="0f5814fb45e88fb5a7d984788675e425" prefix=" " category="inline-code"></block>.</block>
   <block id="d471727ba1fb423986701d5307906d08" category="list-text">Verificare che i punti di estensione del plug-in siano visualizzati nella scheda *Shortcuts* di vSphere Web Client e nel pannello laterale.</block>
-  <block id="1993643c12bb4ee547f04d8d85f8c4bf" category="list-text">A partire dal plug-in Element per vCenter Server 5.0, viene visualizzato il punto di estensione del plug-in remoto NetApp Element:</block>
-  <block id="1c63b3cd9a6d3bdf8b9b31aca68672d7" category="list-text">Per il plug-in Element per vCenter Server 4.10 o versioni precedenti, vengono visualizzati i punti di estensione per la configurazione e la gestione di NetApp Element:</block>
   <block id="a0abd6db969f497b63a29f8fbd1771df" category="inline-link-macro">Plug-in Element per vCenter Server</block>
   <block id="5e98629f8afe2eee1c27355eb45a80e0" category="paragraph">Se le icone del plug-in vCenter non sono visibili, vedere <block ref="ab9b282dbdbe327f4195d1f5d71c406f" category="inline-link-macro-rx"></block> documentazione sulla risoluzione dei problemi del plug-in.</block>
   <block id="726e3510e2c172eed6861f3e6d271360" category="paragraph">Dopo aver eseguito l'aggiornamento al plug-in NetApp Element per vCenter Server 4.8 o versioni successive con VMware vCenter Server 6.7U1, se i cluster di storage non sono elencati o viene visualizzato un errore del server nelle sezioni *Clusters* e *QoSSIOC Settings* della configurazione NetApp Element, vedere <block ref="c907b125bbc711015f83b735f4697e97" category="inline-link-macro-rx"></block> documentazione sulla risoluzione di questi errori.</block>
@@ -4214,7 +4205,6 @@
   <block id="4eed15839b8c708f78b2b696364ff0aa" category="list-text"><block ref="4eed15839b8c708f78b2b696364ff0aa" category="inline-link-rx"></block></block>
   <block id="3938cfdbe176bad61cedb25bdb572858" category="section-title">Software NetApp Element</block>
   <block id="1dea56720635d200a6c7b3a71efca6ab" category="inline-link">Note sulla versione del software NetApp Element 12.7</block>
-  <block id="3e51721b09445e45502532be5e6096fc" category="list-text"><block ref="939f531b35412529043c2c302552fa24" category="inline-link-rx"></block> _NUOVO_</block>
   <block id="875455659aea2dfd3f63e40de150b31c" category="inline-link">Note sulla versione del software NetApp Element 12.5</block>
   <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
   <block id="56570048e2475ec7b64ee91388743714" category="inline-link">Note sulla versione del software NetApp Element 12.3.2</block>
@@ -6110,14 +6100,12 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="eea7cb3a63edf642e1f15162351dfce7" category="list-text">Stai effettuando l'aggiornamento a Element Plug-in per vCenter Server 5,2, 5,1 o 5,0.</block>
   <block id="474ed7ffbbc0fc1d58ad983e7ef700f6" category="admonition">Il plug-in Element per vCenter 5,0 o versioni successive non è compatibile con vCenter Server 6,7 e 6,5.</block>
   <block id="29a68ec994066bf5beb577a0f3fb9556" category="image-alt">Descrive il punto di estensione del plug-in dopo un aggiornamento o un'installazione corretti per Element Plug-in 5,10 o versioni successive</block>
   <block id="f35f89119a6374d18bd89e0103590c61" category="image-alt">Descrive i punti di estensione del plug-in dopo un aggiornamento o un'installazione corretti per Element Plug-in 4,10 o versioni precedenti</block>
   <block id="faf6c38631911f7840c3498b4ec9f746" category="inline-link-macro">Avviso per i servizi di gestione 2.24.40 (plug-in NetApp Element per VMware vCenter Server 5,2.12)</block>
   <block id="1f3c662e49f317f7c70a24adc13870a1" category="list-text"><block ref="1f3c662e49f317f7c70a24adc13870a1" category="inline-link-macro-rx"></block></block>
   <block id="ce397f79b5032c3e327db3efe5a6048a" category="inline-link">VCenter Plug-in 5,2 - Note sulla versione</block>
-  <block id="4718467fa890cd0dcf159b3d461cedbe" category="list-text"><block ref="6bd87cf3d55c2ead3ab585e965bea4db" category="inline-link-rx"></block> _NUOVO_</block>
   <block id="410ecb079e286058eeb2bc6b56d9379c" category="list-text"><block ref="410ecb079e286058eeb2bc6b56d9379c" category="inline-link-rx"></block></block>
   <block id="732713df3c4c58fb19fab37e747f6f0d" category="list-text"><block ref="732713df3c4c58fb19fab37e747f6f0d" category="inline-link-macro-rx"></block></block>
   <block id="890975e7736a237c513f38124344fb84" category="list-text"><block ref="890975e7736a237c513f38124344fb84" category="inline-link-macro-rx"></block></block>
@@ -6155,4 +6143,19 @@
   <block id="6eacafa95777fb1e6eb8520265b58990" category="list-text">Consultare l'articolo della Knowledge base di NetApp<block ref="241ab5b011155d72deeb18c5d431446f" category="inline-link-rx"></block> Per determinare se l'accesso Web a BMC deve essere disattivato.</block>
   <block id="65c8d097794b4f73719e82bebe86d855" category="section-title">Aggiornare il firmware sul nodo</block>
   <block id="08a91b27b8b81bd9d0b64ba51e61dd98" category="paragraph">Dopo aver sostituito il nodo di calcolo, potrebbe essere necessario aggiornare la versione del firmware. Vedere <block ref="502434424b58174296cfde9ecff2397f" category="inline-link-macro-rx"></block> per ulteriori informazioni.</block>
+  <block id="939f531b35412529043c2c302552fa24" category="list-text"><block ref="939f531b35412529043c2c302552fa24" category="inline-link-rx"></block></block>
+  <block id="d3c4a89052a32dd9783dd119f30d6d47" category="inline-link">VCenter Plug-in 5,3 - Note sulla versione</block>
+  <block id="0c21440ced3ddae10d1eea32870fdf02" category="list-text"><block ref="ce90fd614158a5c7e0a42a5908fa1cd7" category="inline-link-rx"></block> _NUOVO_</block>
+  <block id="6bd87cf3d55c2ead3ab585e965bea4db" category="list-text"><block ref="6bd87cf3d55c2ead3ab585e965bea4db" category="inline-link-rx"></block></block>
+  <block id="976b368b923346c8ea4ccc71e72749f5" category="inline-link-macro">Avviso per i servizi di gestione 2.25.42 (plug-in NetApp Element per VMware vCenter Server 5,3.9)</block>
+  <block id="f7e890b0a90e234e4df04fc0c6b8c6a7" category="list-text"><block ref="f7e890b0a90e234e4df04fc0c6b8c6a7" category="inline-link-macro-rx"></block></block>
+  <block id="bef71f962ff7a233f3e8439eeb8dac70" category="list-text">Stai effettuando l'aggiornamento a Element Plug-in per vCenter Server 5,3, 5,2, 5,1 o 5,0.</block>
+  <block id="1b72ac6198c042d0bd992d1bb6e9d9bd" category="paragraph">Si sta eseguendo un nodo di gestione che è stato <block ref="23cc83378d4b0551eef4ac573737e008" category="inline-link-macro-rx"></block> alla versione 12.3.x o successiva.</block>
+  <block id="08f9e70df1fc159dfb7400ec9dea96a4" category="paragraph">Si sta eseguendo un nodo di gestione che è stato <block ref="23cc83378d4b0551eef4ac573737e008" category="inline-link-macro-rx"></block> alla versione 11.3 o successiva. VCenter Plug-in 4.4 o versione successiva richiede un nodo di gestione 11.3 o versione successiva con un'architettura modulare che fornisce singoli servizi. Il nodo di gestione deve essere acceso con il relativo indirizzo IP o DHCP configurato.</block>
+  <block id="98e5a822cb59ab0389d49ffe93acad7a" category="paragraph">Viene visualizzata la pagina di registrazione dei plug-in vCenter:</block>
+  <block id="2e66ed9729b903e2d862678b10234001" category="list-text">(Per server in-house o siti scuri) a seconda del plug-in Element per la versione vCenter, un URL personalizzato per il file JSON del plug-in o il plug-in ZIP:</block>
+  <block id="dfc8b4f16eed3f1e78f9b406c473dd25" category="paragraph">Un URL personalizzato per il file JSON del plug-in.</block>
+  <block id="bfb37ae14420b32b4119e40e73553257" category="paragraph">Un URL personalizzato per il plug-in ZIP.</block>
+  <block id="8e0d59cc781c5557d1fdc81fdff04d8f" category="paragraph">Viene visualizzato il punto di estensione del plugin remoto di NetApp Element:</block>
+  <block id="5770384eddfc0ac7f73f0f6242a52b50" category="paragraph">Vengono visualizzati i punti di estensione della configurazione e della gestione di NetApp Element:</block>
 </blocks>

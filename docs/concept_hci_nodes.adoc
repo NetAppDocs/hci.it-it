@@ -58,7 +58,7 @@ TIP: Scopri di più link:hci_prereqs_witness_nodes.html["Requisiti di risorse de
 
 == Trova ulteriori informazioni
 
-* https://www.netapp.com/us/media/tr-4823.pdf["Cluster di storage a due nodi NetApp HCI | TR-4823"^]
+* https://www.netapp.com/pdf.html?item=/media/9489-tr-4823.pdf["Cluster di storage a due nodi NetApp HCI | TR-4823"^]
 * https://docs.netapp.com/us-en/vcp/index.html["Plug-in NetApp Element per server vCenter"^]
 * http://docs.netapp.com/sfe-122/index.jsp["Centro di documentazione software SolidFire ed Element"^]
 

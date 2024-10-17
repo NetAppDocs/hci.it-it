@@ -81,7 +81,8 @@ NOTE: Ti verrà richiesto di effettuare l'accesso utilizzando le credenziali del
 
 == Firmware di calcolo
 
-* link:rn_compute_firmware_2.174.0.html["Note sulla versione di Compute firmware Bundle 2.174.0"] _NUOVO_
+* link:rn_compute_firmware_2.179.0.html["Note sulla versione di Compute firmware Bundle 2.179.0"] _NUOVO_
+* link:rn_compute_firmware_2.174.0.html["Note sulla versione di Compute firmware Bundle 2.174.0"]
 * link:rn_compute_firmware_2.154.4.html["Note sulla versione di Compute firmware Bundle 2.154.4"]
 * link:rn_compute_firmware_2.146.html["Note sulla versione di Compute firmware Bundle 2.146"]
 * link:rn_compute_firmware_2.76.html["Note sulla versione di Compute firmware Bundle 2.76"]
@@ -94,7 +95,8 @@ NOTE: Ti verrà richiesto di effettuare l'accesso utilizzando le credenziali del
 
 == Firmware dello storage
 
-* link:rn_storage_firmware_2.175.0.html["Note sulla versione di Storage firmware Bundle 2.175.0"] _NUOVO_
+* link:rn_storage_firmware_2.182.0.html["Note di rilascio del bundle del firmware di archiviazione 2.182.0"] _NUOVO_
+* link:rn_storage_firmware_2.175.0.html["Note sulla versione di Storage firmware Bundle 2.175.0"]
 * link:rn_storage_firmware_2.164.0.html["Note sulla versione di Storage firmware Bundle 2.164.0"]
 * link:rn_storage_firmware_2.150.html["Note sulla versione di Storage firmware Bundle 2.150"]
 * link:rn_storage_firmware_2.146.html["Note sulla versione di Storage firmware Bundle 2.146"]

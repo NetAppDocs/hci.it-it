@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: docs/task_hcc_upgrade_management_node.html 
 summary: Come parte di un aggiornamento del sistema NetApp HCI, si aggiorna il nodo di gestione. 
-keywords: netapp, hci, on premise, cluster, management node, mNode, upgrade, 10, 11.0, 11.1, 11.3, 11.5, 11.7, 12.0, 12.2, 12.3, 12.3.1, 12.3.2, 12.3.x, 12.5, 12.7 
+keywords: netapp, hci, on premise, cluster, management node, mNode, upgrade, 10, 11.0, 11.1, 11.3, 11.5, 11.7, 12.0, 12.2, 12.3, 12.3.1, 12.3.2, 12.3.x, 12.5, 12.7, 12.8 
 ---
 = Aggiornare un nodo di gestione
 :allow-uri-read: 
@@ -16,8 +16,30 @@ L'aggiornamento del sistema operativo del nodo di gestione non è più necessari
 
 NOTE: Per informazioni sull'aggiornamento dei nodi di gestione 12.2 o versioni precedenti, consultare https://docs.netapp.com/us-en/hci19/docs/task_hcc_upgrade_management_node.html["Documentazione sull'aggiornamento del nodo di gestione di NetApp HCI 1.9"^].
 
-.Opzioni di upgrade
-Scegliere una delle seguenti opzioni:
+
+
+== Fase 1: Aggiornare la versione hardware della macchina virtuale su un nodo di gestione
+
+Se si sta eseguendo un aggiornamento sul posto di un nodo di gestione esistente all'elemento 12,8, prima di eseguire l'aggiornamento, è necessario assicurarsi che la versione hardware della VM sul nodo di gestione sia compatibile con ESXi 6,7 (VM hardware versione 14) o successiva, a seconda dell'ambiente in uso.
+
+
+NOTE: È anche possibile seguire questi passaggi per aggiornare la versione hardware della VM sui nodi di controllo.
+
+.Fasi
+. Accedere a vSphere Web Client come vCenter Administrator.
+. Dal menu vSphere Client, selezionare *VM* e *modelli*.
+. Fare clic con il pulsante destro del mouse sulla macchina virtuale e selezionare *compatibilità* > *Aggiorna compatibilità VM*.
+. Selezionare *Sì*.
+. Selezionare ESXi 6,7 o una versione successiva, a seconda della versione dell'ambiente vSphere in uso.
+. Selezionare *OK*.
+. Al termine dell'aggiornamento, selezionare *vSphere client refresh* e verificare che la compatibilità VM sia la versione desiderata.
+
+
+
+
+== Passaggio 2: Aggiornare un nodo di gestione a Element 12,5 o versione successiva
+
+Scegliere una delle seguenti opzioni di aggiornamento:
 
 * <<Aggiornare un nodo di gestione alla versione 12.5 o successiva dalla versione 12.3.x o successiva>>
 * <<Riconfigurare l'autenticazione utilizzando l'API REST del nodo di gestione>>
@@ -31,14 +53,14 @@ NOTE: Se non si aggiornano in sequenza i servizi di gestione seguiti dallo stora
 
 
 
-== Aggiornare un nodo di gestione alla versione 12.5 o successiva dalla versione 12.3.x o successiva
+=== Aggiornare un nodo di gestione alla versione 12.5 o successiva dalla versione 12.3.x o successiva
 
 È possibile eseguire un aggiornamento in-place del nodo di gestione dalla versione 12.3.x o successiva alla versione 12.5 o successiva senza dover eseguire il provisioning di una nuova macchina virtuale con nodo di gestione.
 
 
 NOTE: Il nodo di gestione Element 12.5 o versione successiva è un aggiornamento opzionale. Non è richiesto per le implementazioni esistenti.
 
-.Di cosa hai bisogno
+.Prima di iniziare
 * La RAM della VM del nodo di gestione è di 24 GB.
 * Il nodo di gestione che si intende aggiornare è la versione 12.0 e utilizza la rete IPv4. Il nodo di gestione versione 12.5 o successiva non supporta IPv6.
 +
@@ -124,7 +146,7 @@ IMPORTANT: Se in precedenza era stata disattivata la funzionalità SSH sul nodo 
 
 
 
-== Riconfigurare l'autenticazione utilizzando l'API REST del nodo di gestione
+=== Riconfigurare l'autenticazione utilizzando l'API REST del nodo di gestione
 
 È possibile mantenere il nodo di gestione esistente se sono stati aggiornati in sequenza (1) servizi di gestione e (2) storage di elementi. Se si è seguito un ordine di aggiornamento diverso, consultare le procedure per gli aggiornamenti dei nodi di gestione in-place.
 
@@ -157,7 +179,8 @@ Il corpo della risposta indica che la riconfigurazione è stata eseguita corrett
 
 
 
-[discrete]
+
+
 == Trova ulteriori informazioni
 
 * https://docs.netapp.com/us-en/vcp/index.html["Plug-in NetApp Element per server vCenter"^]

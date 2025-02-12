@@ -1888,7 +1888,6 @@
   <block id="f308e6ca453d47a2876df6eae740d8f8" category="cell">Dimensioni del disco</block>
   <block id="a8eb35236338fefbad16baa7af1c75ba" category="cell">67 GB</block>
   <block id="845f62e2611daf20a77cdbef343a155b" category="paragraph">NetApp HCI supporta solo alcuni modelli di nodi di storage in cluster di storage a due o tre nodi. Per ulteriori informazioni, consultare le note di rilascio relative alla versione di NetApp HCI in uso.</block>
-  <block id="edc66b1482b45fd0e89fdbe4ba094191" category="admonition">Quando il processo di installazione di NetApp HCI installa i nodi di controllo, in VMware vCenter viene memorizzato un modello di macchina virtuale che è possibile utilizzare per ridistribuire un nodo di controllo nel caso in cui venga accidentalmente rimosso, perso o danneggiato. È inoltre possibile utilizzare il modello per ridistribuire un nodo di controllo se è necessario sostituire un nodo di calcolo guasto che ospitava il nodo di controllo. Per istruzioni, vedere la sezione *ridistribuire i nodi di controllo per cluster di storage a due e tre nodi* <block ref="0deb95019659c8847f806617fd301765" category="inline-link-macro-rx"></block>.</block>
   <block id="b3f529035f6db885057f0dc4c4efa093" category="summary">I nodi sono l'hardware raggruppato in un cluster a cui si accede come storage a blocchi o risorse di calcolo.</block>
   <block id="187c6ad3a74cc93ac6c2229d398e383e" category="doc">Nodi</block>
   <block id="9573422b361212c3546eb0d97b1126c1" category="paragraph">I nodi sono risorse hardware o virtuali raggruppate in un cluster per fornire funzionalità di calcolo e storage a blocchi.</block>
@@ -1949,8 +1948,6 @@
   <block id="0a5712c2113fc4db522b6907519135e6" category="summary">Scopri le novità di questa versione di NetApp HCI.</block>
   <block id="9cea15d48c9b5a9632827b358396e207" category="doc">Novità di NetApp HCI</block>
   <block id="9919e22324d983d998afd33f187a0a61" category="paragraph">NetApp aggiorna periodicamente NetApp HCI per offrire nuove funzionalità, miglioramenti e correzioni di bug. NetApp HCI 1.10 include il software Element 12.5 per cluster di storage.</block>
-  <block id="6f0ce5bfc09a3a4d8737b564d5879f31" category="inline-link">Scopri di più sulle novità di Element 12.7</block>
-  <block id="f10aa2cb8c994fef24ceca1ee43e4208" category="admonition">Il software Element 12.7 è la versione più recente e include aggiornamenti dei componenti di sicurezza e di sistema, miglioramenti operativi e problemi risolti.<block ref="d071d61ca9198e87abb60c485f07eada" category="inline-link-rx"></block>.</block>
   <block id="53f59c169b2bb48ac0b8253252a06467" category="list-text">Il <block ref="72c4f5351976259ad654b85496cb20be" category="inline-xref-macro-rx"></block> La sezione descrive le nuove funzionalità e gli aggiornamenti di NetApp HCI versione 1.10.</block>
   <block id="2a0ce9a56c6130320cccb8a7f34ec593" category="list-text">Il <block ref="18a6515b1da0f2a2d89c5832cee91752" category="inline-xref-macro-rx"></block> La sezione descrive le nuove funzionalità e gli aggiornamenti di Element 12.5.</block>
   <block id="3f1ab5f7c40b8fa8fd0a42ff36510c23" category="section-title">NetApp HCI 1.10</block>
@@ -3528,11 +3525,6 @@
   <block id="9385b032418674e92472a8b4a2ae5cdf" category="list-text">(Nodo di gestione 12.0 e versioni successive con server proxy) hai aggiornato NetApp Hybrid Cloud Control alla versione 2.16 dei servizi di gestione prima di configurare un server proxy.</block>
   <block id="0406c3e25004e3d1dddbc367d2c4010f" category="paragraph">Il nodo di gestione di Element 12.2 è un aggiornamento opzionale. Non è richiesto per le implementazioni esistenti.</block>
   <block id="7f10e6e99f08f394e823f7104513126a" category="paragraph">Prima di seguire questa procedura, è necessario conoscere <block ref="6f73bacaba2e470844b654fcbffb809f" category="inline-link-macro-rx"></block> e se si desidera o meno utilizzarli. I volumi persistenti sono opzionali ma consigliati per il ripristino dei dati di configurazione del nodo di gestione in caso di perdita di una macchina virtuale (VM).</block>
-  <block id="d65a2ab43bcac7efebde7effc9d142f8" category="list-text"><block ref="4e8e62755aa10b5d2420c05d87c0085a" category="inline-xref-macro-rx"></block></block>
-  <block id="c92609be7302c756d6d918553df475c1" category="list-text"><block ref="d9e86326331a25418b718094ae602c19" category="inline-xref-macro-rx"></block></block>
-  <block id="0267f7e06220d0fa6fb42578b5746da3" category="list-text"><block ref="b41cb2f7bd156a4035cdf9347b89cebe" category="inline-xref-macro-rx"></block></block>
-  <block id="067315cbc6353502fa36a4f8722badbd" category="inline-xref">(Solo NetApp HCI) configurare le risorse dei nodi di calcolo</block>
-  <block id="cc41647231a76da233743c53a496e137" category="list-text"><block ref="fab01553c96541ce7ac54638294897d8" category="inline-xref-macro-rx"></block></block>
   <block id="7b4b2bec7b806d58982537647a92deef" category="list-text">Selezionare *Download Latest Release* (Scarica ultima versione) e accettare il contratto EULA.</block>
   <block id="bb79fe0e6bf117510635c505cc16e74d" category="list-text">Creare una nuova VM a 64 bit dall'hypervisor con la seguente configurazione:</block>
   <block id="4cb04e22051dcc88da6d140ef391aab8" category="list-text">Tipo di scheda di storage impostato su LSI Logic Parallel</block>
@@ -3540,7 +3532,6 @@
   <block id="4aec8fb7a6a9c5631ebb25a7b86d9ac5" category="admonition">Non accendere la macchina virtuale prima della fase indicata in questa procedura.</block>
   <block id="1632315c8463eb1e9d1b980297d68c37" category="list-text">Collegare l'ISO alla macchina virtuale e avviare l'immagine di installazione .iso.</block>
   <block id="faa024991ac61fa39b20d61ed2e88ada" category="list-text">Al termine dell'installazione, accendere la macchina virtuale per il nodo di gestione.</block>
-  <block id="f894cbc944582e1f10fec4bf2a0639f0" category="section-title">Creare il nodo di gestione admin e configurare la rete</block>
   <block id="c19f63a05ffe39159954c2b2fd892582" category="list-text">Se sulla rete è presente un server DHCP (Dynamic host Configuration Protocol) che assegna indirizzi IP con un numero massimo di unità di trasmissione (MTU) inferiore a 1500 byte, attenersi alla seguente procedura:</block>
   <block id="b44234e2a29812de715ddf5ea19c15fc" category="list-text">Posizionare temporaneamente il nodo di gestione su una rete vSphere senza DHCP, ad esempio iSCSI.</block>
   <block id="f35b648abbd5fe5949ea297ee6cef3b9" category="list-text">Riavviare la macchina virtuale o la rete della macchina virtuale.</block>
@@ -3552,7 +3543,6 @@
   <block id="e7538fbaab3148e24ff8ae41d09df5ce" category="list-text">[[substep_f_install_config_time_Sync]]Disattiva la sincronizzazione dell'ora con l'host tramite l'hypervisor (il seguente è un esempio VMware):</block>
   <block id="2d80cb22364fea2daaca797ae1d938cb" category="inline-link-macro">comando di installazione</block>
   <block id="a482c646f7f8199c69090c0d13cac33b" category="admonition">Non modificare l'NTP dopo aver completato la configurazione di Time Sync, in quanto influisce sull'NTP quando si esegue <block ref="418ec8b5cff4068b256dfd7e9fc5ded7" category="inline-link-macro-rx"></block> sul nodo di gestione.</block>
-  <block id="627bbdc5a7179606b85a5d6ccb6f65e1" category="section-title">Configurare il nodo di gestione</block>
   <block id="5a808c62f4f9557c4df556d6a230ba7c" category="list-text">Configurare ed eseguire il comando di setup del nodo di gestione:</block>
   <block id="fea104dd45bc0e75d821ddd5af2b02d0" category="admonition">La forma abbreviata del nome del comando è tra parentesi ( ) e può essere sostituita con il nome completo.</block>
   <block id="3f124867257c579e7ba689baed3d4f45" category="list-text">*--mnode_admin_user (-mu) [nome utente]*: Il nome utente per l'account amministratore del nodo di gestione. Probabilmente si tratta del nome utente dell'account utente utilizzato per accedere al nodo di gestione.</block>
@@ -3576,7 +3566,6 @@
   <block id="aabee241823de4ff993b60d0a196a387" category="list-text">(Facoltativo) utilizzare la guida ai parametri se sono necessarie ulteriori informazioni su ciascun parametro:</block>
   <block id="f89c180fd45cb0275c5ee18e59d2b43d" category="list-text">*--help (-h)*: Restituisce informazioni su ciascun parametro. I parametri sono definiti come obbligatori o facoltativi in base all'implementazione iniziale. I requisiti dei parametri di aggiornamento e ridistribuzione potrebbero variare.</block>
   <block id="79032d0c879c3afbbb570dd870eb09e1" category="list-text">Eseguire<block ref="73028873f2b0a018096b6a3d871634b5" prefix=" " category="inline-code"></block> comando.</block>
-  <block id="7ea2768c656768f853cd68b9066eba0f" category="section-title">Configurare le risorse dei controller</block>
   <block id="4240350efa82cb4b2d0dcd00f64f496b" category="list-text">Individuare l'ID di installazione:</block>
   <block id="81b4d8ce3b6d3d31bcc065c5589192ab" category="list-text">Da un browser, accedere all'interfaccia utente API REST del nodo di gestione:</block>
   <block id="ed4faf2b135a0f2d74eef06f6fd8899e" category="list-text">Accedere a Storage MVIP ed effettuare l'accesso. Questa azione fa sì che il certificato venga accettato per la fase successiva.</block>
@@ -3590,7 +3579,6 @@
   <block id="9db4acd10c15ec173e6516c347342e25" category="admonition">È necessario creare un nuovo ruolo NetApp HCC in vCenter per aggiungere una sottorisorsa del controller. Questo nuovo ruolo di NetApp HCC limiterà la vista dei servizi del nodo di gestione alle risorse solo NetApp. Vedere <block ref="8fe5279440ee3c239e840ed9b8e10ddd" category="inline-link-macro-rx"></block>.</block>
   <block id="4fc766d515cef70e327bbefb8f32007e" category="list-text">Inserire l'ID risorsa base principale copiato negli Appunti nel campo *asset_id*.</block>
   <block id="e2e193a380a16845739e1445cfe23fde" category="list-text">Inserire i valori del payload richiesti con il tipo<block ref="e10ca1adb349a5228f7573a244805247" prefix=" " category="inline-code"></block> E vCenter.</block>
-  <block id="421226b233bd18f9c1f8d179419a2f39" category="list-text">(Solo per NetApp HCI) aggiungere una risorsa di nodo di calcolo al nodo di gestione risorse note:</block>
   <block id="59cb038ca0d26b60e9eda25d59ec865b" category="list-text">Selezionare *POST /assets/{asset_id}/compute-nodes* per aggiungere una sottorisorsa del nodo di calcolo con credenziali per la risorsa del nodo di calcolo.</block>
   <block id="ea32544c4914661e6b948f2891dd6a83" category="list-text">Nel payload, inserire i valori del payload richiesti come definito nella scheda Model (modello). Invio<block ref="b0429e6f6291e7688c57a970fe0a03bc" prefix=" " category="inline-code"></block> come<block ref="599dcce2998a6b40b1e38e8c6006cb0a" prefix=" " category="inline-code"></block> e inserire il tag hardware salvato durante un passaggio precedente per<block ref="881962cb2470d984f65313a8e4ceec64" prefix=" " category="inline-code"></block>.</block>
   <block id="891d7cb5314c1395a5f98467dc959053" category="inline-link-macro">Configurare una NIC storage</block>
@@ -6233,4 +6221,36 @@
   <block id="f0fe2934aa8d8cec985fef2e0c464532" category="list-text"><block ref="f0fe2934aa8d8cec985fef2e0c464532" category="inline-link-macro-rx"></block></block>
   <block id="08c1b18f2bce38d2bceb61af5b8c4c6e" category="list-text"><block ref="08c1b18f2bce38d2bceb61af5b8c4c6e" category="inline-link-macro-rx"></block></block>
   <block id="c1f2aa244c34463b7aea4f2b566f9420" category="list-text"><block ref="c1f2aa244c34463b7aea4f2b566f9420" category="inline-link-macro-rx"></block></block>
+  <block id="9c9a41bc801502e6500c79ea7586ba95" category="inline-link-macro">Ridistribuire i nodi di controllo per cluster di storage a due e tre nodi</block>
+  <block id="d0f20378e2595fa7956c455387d1bc5a" category="paragraph">Quando il processo di installazione di NetApp HCI installa i nodi di controllo, in VMware vCenter viene memorizzato un modello di macchina virtuale che è possibile utilizzare per ridistribuire un nodo di controllo nel caso in cui venga accidentalmente rimosso, perso o danneggiato. È inoltre possibile utilizzare il modello per ridistribuire un nodo di controllo se è necessario sostituire un nodo di calcolo guasto che ospitava il nodo di controllo. Per istruzioni, vedere <block ref="6fa44f1a6cd8ce6de51cb02b7ae12cc5" category="inline-link-macro-rx"></block>.</block>
+  <block id="3c72afcfca67f187b816a55135a243dd" category="inline-link-macro">Aggiornare la versione hardware della VM</block>
+  <block id="4fff07540e1d83ac9775ec8030cce786" category="paragraph">Se si sta eseguendo un aggiornamento sul posto di un nodo di controllo esistente all'elemento 12,8, prima di eseguire l'aggiornamento, è necessario assicurarsi che la versione hardware della VM sul nodo di controllo sia compatibile con ESXi 6,7 (versione hardware della VM 14) o successiva, a seconda dell'ambiente in uso. Vedere <block ref="d1fe5954ed8bd3e53eba83ab0658a6e0" category="inline-link-macro-rx"></block>.</block>
+  <block id="6db7dd4182be7a1979ad403111fa8618" category="inline-link">Note sulla versione del software NetApp Element 12,8</block>
+  <block id="7d776811219f8ebb17adecaa976bd578" category="list-text"><block ref="53e04163346326834efd61306c0800b5" category="inline-link-rx"></block> _NUOVO_</block>
+  <block id="a175ee087381806b642bbcfee91690d5" category="inline-link">Scopri di più sulle novità di Element 12.8</block>
+  <block id="669c1fb7e11e3bb5ca277eb16b4a55f4" category="admonition">Il software Element 12,8 è la versione più recente e include aggiornamenti dei componenti di sistema e per la sicurezza, miglioramenti operativi e problemi risolti.<block ref="4f11681fa65d50fd10f6fc370da0cbe3" category="inline-link-rx"></block>.</block>
+  <block id="b036ebb7aa6b63db449d4df71f28c3cd" category="section-title">Fase 1: Aggiornare la versione hardware della macchina virtuale su un nodo di gestione</block>
+  <block id="6bdecd9b5d3ab973ac36df911f986fc3" category="paragraph">Se si sta eseguendo un aggiornamento sul posto di un nodo di gestione esistente all'elemento 12,8, prima di eseguire l'aggiornamento, è necessario assicurarsi che la versione hardware della VM sul nodo di gestione sia compatibile con ESXi 6,7 (VM hardware versione 14) o successiva, a seconda dell'ambiente in uso.</block>
+  <block id="d334c1e547b1e27eae5f50bf46f786cd" category="admonition">È anche possibile seguire questi passaggi per aggiornare la versione hardware della VM sui nodi di controllo.</block>
+  <block id="da356a9209429c8cb4f06565d719d2b8" category="list-text">Accedere a vSphere Web Client come vCenter Administrator.</block>
+  <block id="1a331e443f5aee428076dfc1341e09b5" category="list-text">Dal menu vSphere Client, selezionare *VM* e *modelli*.</block>
+  <block id="f42849b7cb77e25b9a5601553a509100" category="list-text">Fare clic con il pulsante destro del mouse sulla macchina virtuale e selezionare *compatibilità* &gt; *Aggiorna compatibilità VM*.</block>
+  <block id="cf8716d5690805e881fbd8fa22fb282a" category="list-text">Selezionare ESXi 6,7 o una versione successiva, a seconda della versione dell'ambiente vSphere in uso.</block>
+  <block id="7473f663a4bbad1085e61ed9c976a50a" category="list-text">Al termine dell'aggiornamento, selezionare *vSphere client refresh* e verificare che la compatibilità VM sia la versione desiderata.</block>
+  <block id="6b17900bf8b7a52b1be75bbe68b2d77e" category="section-title">Passaggio 2: Aggiornare un nodo di gestione a Element 12,5 o versione successiva</block>
+  <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">Scegliere una delle seguenti opzioni di aggiornamento:</block>
+  <block id="6d8cd87a85946daeae42cb54aade3baa" category="section-title">Passaggio 1: Scaricare ISO o OVA e distribuire la VM</block>
+  <block id="90c4d8ddd76d9f5f86c144316cec5657" category="paragraph">Scaricare l'ISO o l'OVA appropriato dal sito di supporto NetApp e installare la VM.</block>
+  <block id="c6913d34fefabb7329dba971ad99632d" category="section-title">Fase 2: Creare il nodo di gestione admin e configurare la rete</block>
+  <block id="8e1cc7b20e9f183452b777f8a4fb586d" category="paragraph">Una volta completata l'installazione della VM, creare l'utente amministratore del nodo di gestione e configurare la rete del nodo di gestione.</block>
+  <block id="5e0472334bca93d0d28d3eeaaf723518" category="section-title">Passaggio 3: Configurare la sincronizzazione dell'ora</block>
+  <block id="6646ab3d83d88b5b34e61e3a58b244e8" category="paragraph">Prima di configurare il nodo di gestione, sincronizzare l'ora tra il nodo di gestione e il cluster di storage.</block>
+  <block id="ef246c91c687e7d720eb49c5e2a4cd47" category="section-title">Fase 4: Impostare il nodo di gestione</block>
+  <block id="9f150d20e38589485a1bb878b18c51e2" category="paragraph">Configurare il nodo di gestione utilizzando il<block ref="73028873f2b0a018096b6a3d871634b5" prefix=" " category="inline-code"></block> comando.</block>
+  <block id="2cec258fd66ace0725a9af6922c80f3e" category="section-title">Passaggio 5: Configurare le risorse dei controller</block>
+  <block id="b5d27a207b01cd3ca9fef9594d50836f" category="paragraph">Individuare l'ID di installazione e aggiungere una risorsa per il controller vCenter.</block>
+  <block id="bd6447e80251856484a25ace239c3873" category="section-title">Fase 6: (Solo NetApp HCI) configurare le risorse del nodo di calcolo</block>
+  <block id="64391abac346294811422637c6d0a865" category="paragraph">Aggiungere una risorsa di nodo di calcolo alle risorse note del nodo di gestione</block>
+  <block id="975648a39ca92865d807bc35f02b5984" category="inline-link-macro">Avviso per il software Element 12,8</block>
+  <block id="d70cd205dfc4339579c798a35dc44462" category="list-text"><block ref="d70cd205dfc4339579c798a35dc44462" category="inline-link-macro-rx"></block></block>
 </blocks>

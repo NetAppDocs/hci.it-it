@@ -18,7 +18,7 @@ keywords: netapp, hci, element, new, whatsnew
 NetApp aggiorna periodicamente NetApp HCI per offrire nuove funzionalità, miglioramenti e correzioni di bug. NetApp HCI 1.10 include il software Element 12.5 per cluster di storage.
 
 
-NOTE: Il software Element 12.7 è la versione più recente e include aggiornamenti dei componenti di sicurezza e di sistema, miglioramenti operativi e problemi risolti. https://docs.netapp.com/us-en/element-software/concepts/concept_rn_whats_new_element.html["Scopri di più sulle novità di Element 12.7"^].
+NOTE: Il software Element 12,8 è la versione più recente e include aggiornamenti dei componenti di sistema e per la sicurezza, miglioramenti operativi e problemi risolti. https://docs.netapp.com/us-en/element-software/concepts/concept_rn_whats_new_element.html["Scopri di più sulle novità di Element 12.8"^].
 
 * Il <<NetApp HCI 1.10>> La sezione descrive le nuove funzionalità e gli aggiornamenti di NetApp HCI versione 1.10.
 * Il <<Software Element 12.5>> La sezione descrive le nuove funzionalità e gli aggiornamenti di Element 12.5.

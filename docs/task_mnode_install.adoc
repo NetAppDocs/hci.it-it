@@ -18,7 +18,7 @@ keywords: netapp, element, management node, mnode, storage, install
 
 Questo processo manuale è destinato agli amministratori NetApp HCI che non utilizzano il motore di implementazione NetApp per l'installazione del nodo di gestione.
 
-.Di cosa hai bisogno
+.Prima di iniziare
 * La versione del cluster in uso esegue il software NetApp Element 11.3 o versione successiva.
 * L'installazione utilizza IPv4. Il nodo di gestione 11.3 non supporta IPv6.
 +
@@ -55,19 +55,13 @@ Il nodo di gestione di Element 12.2 è un aggiornamento opzionale. Non è richie
 
 Prima di seguire questa procedura, è necessario conoscere link:concept_hci_volumes.html#persistent-volumes["volumi persistenti"] e se si desidera o meno utilizzarli. I volumi persistenti sono opzionali ma consigliati per il ripristino dei dati di configurazione del nodo di gestione in caso di perdita di una macchina virtuale (VM).
 
+
+
+== Passaggio 1: Scaricare ISO o OVA e distribuire la VM
+
+Scaricare l'ISO o l'OVA appropriato dal sito di supporto NetApp e installare la VM.
+
 .Fasi
-. <<Scarica ISO o OVA e implementa la macchina virtuale>>
-. <<Creare il nodo di gestione admin e configurare la rete>>
-. <<Configurare la sincronizzazione dell'ora>>
-. <<Configurare il nodo di gestione>>
-. <<Configurare le risorse dei controller>>
-. <<Configure compute node assets,(Solo NetApp HCI) configurare le risorse dei nodi di calcolo>>
-
-
-
-
-== Scarica ISO o OVA e implementa la macchina virtuale
-
 . Scaricare l'OVA o l'ISO per l'installazione dal https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab["NetApp HCI"^] Pagina sul sito di supporto NetApp:
 +
 .. Selezionare *Download Latest Release* (Scarica ultima versione) e accettare il contratto EULA.
@@ -112,8 +106,11 @@ NOTE: L'installazione di un nodo di gestione mediante l'immagine potrebbe causar
 
 
 
-== Creare il nodo di gestione admin e configurare la rete
+== Fase 2: Creare il nodo di gestione admin e configurare la rete
 
+Una volta completata l'installazione della VM, creare l'utente amministratore del nodo di gestione e configurare la rete del nodo di gestione.
+
+.Fasi
 . Utilizzando l'interfaccia utente del terminale (TUI), creare un utente admin del nodo di gestione.
 +
 
@@ -140,8 +137,11 @@ NOTE: Se è necessaria una scheda di rete aggiuntiva per isolare il traffico di 
 
 
 
-== Configurare la sincronizzazione dell'ora
+== Passaggio 3: Configurare la sincronizzazione dell'ora
 
+Prima di configurare il nodo di gestione, sincronizzare l'ora tra il nodo di gestione e il cluster di storage.
+
+.Fasi
 . Assicurarsi che il tempo sia sincronizzato tra il nodo di gestione e il cluster di storage utilizzando NTP:
 +
 
@@ -219,8 +219,11 @@ NOTE: Non modificare l'NTP dopo aver completato la configurazione di Time Sync, 
 
 
 
-== Configurare il nodo di gestione
+== Fase 4: Impostare il nodo di gestione
 
+Configurare il nodo di gestione utilizzando il `setup-mnode` comando.
+
+.Fasi
 . Configurare ed eseguire il comando di setup del nodo di gestione:
 +
 
@@ -282,8 +285,11 @@ NOTE: Utilizzare un nome account univoco per i volumi persistenti diverso da qua
 
 
 
-== Configurare le risorse dei controller
+== Passaggio 5: Configurare le risorse dei controller
 
+Individuare l'ID di installazione e aggiungere una risorsa per il controller vCenter.
+
+.Fasi
 . Individuare l'ID di installazione:
 +
 .. Da un browser, accedere all'interfaccia utente API REST del nodo di gestione:
@@ -348,20 +354,20 @@ NOTE: È necessario creare un nuovo ruolo NetApp HCC in vCenter per aggiungere u
 
 
 
-== (Solo NetApp HCI) configurare le risorse dei nodi di calcolo
+== Fase 6: (Solo NetApp HCI) configurare le risorse del nodo di calcolo
 
-. (Solo per NetApp HCI) aggiungere una risorsa di nodo di calcolo al nodo di gestione risorse note:
-+
-.. Selezionare *POST /assets/{asset_id}/compute-nodes* per aggiungere una sottorisorsa del nodo di calcolo con credenziali per la risorsa del nodo di calcolo.
-.. Selezionare *Provalo*.
-.. Inserire l'ID risorsa base principale copiato negli Appunti nel campo *asset_id*.
-.. Nel payload, inserire i valori del payload richiesti come definito nella scheda Model (modello). Invio `ESXi Host` come `type` e inserire il tag hardware salvato durante un passaggio precedente per `hardware_tag`.
-.. Selezionare *Esegui*.
+Aggiungere una risorsa di nodo di calcolo alle risorse note del nodo di gestione
+
+.Fasi
+. Selezionare *POST /assets/{asset_id}/compute-nodes* per aggiungere una sottorisorsa del nodo di calcolo con credenziali per la risorsa del nodo di calcolo.
+. Selezionare *Provalo*.
+. Inserire l'ID risorsa base principale copiato negli Appunti nel campo *asset_id*.
+. Nel payload, inserire i valori del payload richiesti come definito nella scheda Model (modello). Invio `ESXi Host` come `type` e inserire il tag hardware salvato durante un passaggio precedente per `hardware_tag`.
+. Selezionare *Esegui*.
 
 
 
 
-[discrete]
 == Ulteriori informazioni
 
 * link:concept_hci_volumes.html#persistent-volumes["Volumi persistenti"]

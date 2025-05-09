@@ -76,6 +76,5 @@ NOTE: L'aggiornamento del sistema operativo del nodo di gestione non è più nec
 == Trova ulteriori informazioni
 
 * https://docs.netapp.com/us-en/vcp/index.html["Plug-in NetApp Element per server vCenter"^]
-* https://www.netapp.com/hybrid-cloud/hci-documentation/["Pagina delle risorse NetApp HCI"^]
 * https://docs.netapp.com/us-en/element-software/upgrade/concept_element_upgrade_overview.html["Aggiorna un sistema storage all-flash NetApp SolidFire"^]
 

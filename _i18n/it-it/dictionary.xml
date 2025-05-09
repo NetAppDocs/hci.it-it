@@ -382,8 +382,6 @@
   <block id="8a563489c25cf0ebc17cc030bb6ca496" category="list-text">Ripetere questa procedura per tutti gli altri nodi NetApp HCI H610C, H615C o H610S con password IPMI predefinite.</block>
   <block id="642b57ae61fbf875dba06df638def96a" category="inline-link">Documentazione NetApp SolidFire Active IQ</block>
   <block id="d70c282924b717571aef1cee7fb90bda" category="list-text"><block ref="d70c282924b717571aef1cee7fb90bda" category="inline-link-rx"></block></block>
-  <block id="a83404b3b2ca8b3c39459b719d7844d7" category="inline-link">Pagina delle risorse NetApp HCI</block>
-  <block id="efb3497df51898324a04d1329dc9b9ae" category="list-text"><block ref="efb3497df51898324a04d1329dc9b9ae" category="inline-link-rx"></block></block>
   <block id="df65f5c1d0a5896f87e664b9add16f32" category="summary">Scopri i requisiti di DNS e di conservazione dei tempi per NetApp HCI.</block>
   <block id="910bc6aecf05f95f12c1b61bfdeb180d" category="doc">DNS e requisiti di conservazione dei tempi</block>
   <block id="a37125410851f68e5cc89a60c957a863" category="paragraph">Prima dell'implementazione, è necessario preparare i record DNS (Domain Name System) per il sistema NetApp HCI e raccogliere le informazioni sul server NTP. NetApp HCI richiede un server DNS con le voci DNS corrette e un server NTP per una corretta implementazione.</block>
@@ -394,7 +392,6 @@
   <block id="cef30eda4c0b7af9b31a5d98cc9a55e8" category="list-text">NetApp HCI richiede un server NTP valido per la conservazione dei tempi. Se non si dispone di un server di riferimento orario, è possibile utilizzare un server di riferimento orario pubblico.</block>
   <block id="37aa99a448ecdc70dac167f71e6faaac" category="list-text">Assicurarsi che tutti i clock dei nodi di calcolo e di storage siano sincronizzati tra loro e che gli orologi dei dispositivi utilizzati per accedere a NetApp HCI siano sincronizzati con i nodi NetApp HCI.</block>
   <block id="c93817bbfc3fab71f5f7ca740a11c847" category="inline-link">Pagina delle risorse NetApp HCI</block>
-  <block id="acc25bb29912a0eb99591d6397d5e11d" category="list-text"><block ref="acc25bb29912a0eb99591d6397d5e11d" category="inline-link-rx"></block></block>
   <block id="62403656f60d86891c7c9ad1ffa2f44f" category="summary">È possibile disattivare e attivare la funzionalità SSH sul nodo di gestione utilizzando l'interfaccia utente NetApp Hybrid Cloud Control o L'interfaccia utente REST API o determinare lo stato della funzionalità di connessione del supporto SSH utilizzando l'interfaccia utente REST API.</block>
   <block id="d6ffeb2fc4f82d1d17f906502ee07d86" category="doc">Gestire la funzionalità SSH sul nodo di gestione</block>
   <block id="1ff95dcbc18b37a5ced1333dc80463dc" category="inline-link-macro">Accesso alla sessione del NetApp Support Remote Support Tunnel (RST)</block>
@@ -6233,10 +6230,7 @@
   <block id="6bdecd9b5d3ab973ac36df911f986fc3" category="paragraph">Se si sta eseguendo un aggiornamento sul posto di un nodo di gestione esistente all'elemento 12,8, prima di eseguire l'aggiornamento, è necessario assicurarsi che la versione hardware della VM sul nodo di gestione sia compatibile con ESXi 6,7 (VM hardware versione 14) o successiva, a seconda dell'ambiente in uso.</block>
   <block id="d334c1e547b1e27eae5f50bf46f786cd" category="admonition">È anche possibile seguire questi passaggi per aggiornare la versione hardware della VM sui nodi di controllo.</block>
   <block id="da356a9209429c8cb4f06565d719d2b8" category="list-text">Accedere a vSphere Web Client come vCenter Administrator.</block>
-  <block id="1a331e443f5aee428076dfc1341e09b5" category="list-text">Dal menu vSphere Client, selezionare *VM* e *modelli*.</block>
-  <block id="f42849b7cb77e25b9a5601553a509100" category="list-text">Fare clic con il pulsante destro del mouse sulla macchina virtuale e selezionare *compatibilità* &gt; *Aggiorna compatibilità VM*.</block>
   <block id="cf8716d5690805e881fbd8fa22fb282a" category="list-text">Selezionare ESXi 6,7 o una versione successiva, a seconda della versione dell'ambiente vSphere in uso.</block>
-  <block id="7473f663a4bbad1085e61ed9c976a50a" category="list-text">Al termine dell'aggiornamento, selezionare *vSphere client refresh* e verificare che la compatibilità VM sia la versione desiderata.</block>
   <block id="6b17900bf8b7a52b1be75bbe68b2d77e" category="section-title">Passaggio 2: Aggiornare un nodo di gestione a Element 12,5 o versione successiva</block>
   <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">Scegliere una delle seguenti opzioni di aggiornamento:</block>
   <block id="6d8cd87a85946daeae42cb54aade3baa" category="section-title">Passaggio 1: Scaricare ISO o OVA e distribuire la VM</block>
@@ -6253,4 +6247,10 @@
   <block id="64391abac346294811422637c6d0a865" category="paragraph">Aggiungere una risorsa di nodo di calcolo alle risorse note del nodo di gestione</block>
   <block id="975648a39ca92865d807bc35f02b5984" category="inline-link-macro">Avviso per il software Element 12,8</block>
   <block id="2d0be4b4ba388979c4f454ae05179965" category="list-text"><block ref="2d0be4b4ba388979c4f454ae05179965" category="inline-link-macro-rx"></block></block>
+  <block id="6e93fbac14e98fd4eee5f4f560e1d580" category="list-text">Dal menu vSphere Client, selezionare *VM e modelli*.</block>
+  <block id="be19667c20f2f3c6b932b48a9c488774" category="list-text">Fare clic con il pulsante destro del mouse sulla macchina virtuale (VM) e selezionare *alimentazione* &gt; *Arresta il sistema operativo guest*.</block>
+  <block id="6f5f678ae471ecc070cea185b3d40ed4" category="paragraph">Attendere fino allo spegnimento della VM.</block>
+  <block id="b58c4fe6ac8a2dffa0fb94c9d1de7556" category="list-text">Fare clic con il pulsante destro del mouse sulla macchina virtuale e selezionare *compatibilità* &gt; *Aggiorna compatibilità VM*.</block>
+  <block id="eeb196c0a77fbb85f8908ae3cca16bfc" category="list-text">Al termine dell'aggiornamento, fare clic con il pulsante destro del mouse sulla macchina virtuale e selezionare *alimentazione* &gt; *accensione*.</block>
+  <block id="917268d8045dd1bb18e5f8cc7caf9359" category="list-text">Selezionare *vSphere client refresh* e verificare che la compatibilità VM sia la versione desiderata.</block>
 </blocks>

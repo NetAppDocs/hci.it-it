@@ -27,12 +27,17 @@ NOTE: È anche possibile seguire questi passaggi per aggiornare la versione hard
 
 .Fasi
 . Accedere a vSphere Web Client come vCenter Administrator.
-. Dal menu vSphere Client, selezionare *VM* e *modelli*.
+. Dal menu vSphere Client, selezionare *VM e modelli*.
+. Fare clic con il pulsante destro del mouse sulla macchina virtuale (VM) e selezionare *alimentazione* > *Arresta il sistema operativo guest*.
++
+Attendere fino allo spegnimento della VM.
+
 . Fare clic con il pulsante destro del mouse sulla macchina virtuale e selezionare *compatibilità* > *Aggiorna compatibilità VM*.
 . Selezionare *Sì*.
 . Selezionare ESXi 6,7 o una versione successiva, a seconda della versione dell'ambiente vSphere in uso.
 . Selezionare *OK*.
-. Al termine dell'aggiornamento, selezionare *vSphere client refresh* e verificare che la compatibilità VM sia la versione desiderata.
+. Al termine dell'aggiornamento, fare clic con il pulsante destro del mouse sulla macchina virtuale e selezionare *alimentazione* > *accensione*.
+. Selezionare *vSphere client refresh* e verificare che la compatibilità VM sia la versione desiderata.
 
 
 
@@ -183,6 +188,4 @@ Il corpo della risposta indica che la riconfigurazione è stata eseguita corrett
 
 == Trova ulteriori informazioni
 
-* https://docs.netapp.com/us-en/vcp/index.html["Plug-in NetApp Element per server vCenter"^]
-* https://www.netapp.com/hybrid-cloud/hci-documentation/["Pagina delle risorse NetApp HCI"^]
-
+https://docs.netapp.com/us-en/vcp/index.html["Plug-in NetApp Element per server vCenter"^]

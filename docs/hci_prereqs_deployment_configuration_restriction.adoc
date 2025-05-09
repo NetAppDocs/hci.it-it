@@ -18,9 +18,8 @@ Alcune configurazioni sono limitate nel NetApp Deployment Engine a seconda della
 
 Se link:task_nde_select_inventory.html["Selezionare una configurazione limitata dalla pagina *inventario*"] durante l'implementazione, viene visualizzato un messaggio di errore con opzioni di configurazione valide alternative.
 
-[discrete]
+
+
 == Trova ulteriori informazioni
 
-* https://www.netapp.com/hybrid-cloud/hci-documentation/["Pagina delle risorse NetApp HCI"^]
-* https://docs.netapp.com/us-en/vcp/index.html["Plug-in NetApp Element per server vCenter"^]
-
+https://docs.netapp.com/us-en/vcp/index.html["Plug-in NetApp Element per server vCenter"^]

@@ -422,9 +422,8 @@ NetApp Hybrid Cloud Control dispone di un periodo di attesa di tre ore preimpost
 
 CAUTION: L'interruzione dell'aggiornamento del cluster durante l'aggiornamento di un nodo potrebbe causare la rimozione dei dischi dal nodo. Se i dischi vengono rimossi in modo non corretto, l'aggiunta dei dischi durante un aggiornamento richiederà l'intervento manuale del supporto NetApp. Il nodo potrebbe richiedere più tempo per eseguire gli aggiornamenti del firmware o le attività di sincronizzazione post-aggiornamento. Se l'aggiornamento sembra bloccato, contattare il supporto NetApp per assistenza.
 
-[discrete]
+
+
 == Trova ulteriori informazioni
 
-* https://docs.netapp.com/us-en/vcp/index.html["Plug-in NetApp Element per server vCenter"^]
-* https://www.netapp.com/hybrid-cloud/hci-documentation/["Pagina delle risorse NetApp HCI"^]
-
+https://docs.netapp.com/us-en/vcp/index.html["Plug-in NetApp Element per server vCenter"^]

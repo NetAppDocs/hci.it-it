@@ -72,9 +72,6 @@ Nella tabella vengono utilizzate le seguenti abbreviazioni:
 | Nodo di gestione | Nodo storage MVIP | 442 | Accesso API e UI agli aggiornamenti del software Element e del nodo di storage 
 
 
-| Nodo di gestione | `23.32.54.122`, `216.240.21.15` | 443 | Aggiornamenti del software Element 
-
-
 | Nodo di gestione | BMC (Baseboard Management Controller) | 443 | Monitoraggio dell'hardware e connessione all'inventario (comandi Redfish e IPMI) 
 
 

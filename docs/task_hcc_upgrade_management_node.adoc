@@ -20,7 +20,7 @@ NOTE: Per informazioni sull'aggiornamento dei nodi di gestione 12.2 o versioni p
 
 == Fase 1: Aggiornare la versione hardware della macchina virtuale su un nodo di gestione
 
-Se si sta eseguendo un aggiornamento sul posto di un nodo di gestione esistente all'elemento 12,8, prima di eseguire l'aggiornamento, è necessario assicurarsi che la versione hardware della VM sul nodo di gestione sia compatibile con ESXi 6,7 (VM hardware versione 14) o successiva, a seconda dell'ambiente in uso.
+Se si esegue un aggiornamento sul posto di un nodo di gestione esistente a Element 12.8 o versione successiva, prima di eseguire l'aggiornamento è necessario assicurarsi che la versione hardware della VM sul nodo di gestione sia compatibile con ESXi 6.7 (versione hardware della VM 14) o versione successiva, a seconda dell'ambiente.
 
 
 NOTE: È anche possibile seguire questi passaggi per aggiornare la versione hardware della VM sui nodi di controllo.
